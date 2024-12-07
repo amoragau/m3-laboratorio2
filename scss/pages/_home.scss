@@ -1,0 +1,13 @@
+@use "../utils/mixins" as m;
+#img-bienvenida{
+  display: block;
+  width: 40%;
+  margin: auto auto 5vh auto;
+  @include m.p-movil(){
+    width: 80%;
+  }
+}
+.consultas__img{
+  width:100px;
+  height: 100px;
+}

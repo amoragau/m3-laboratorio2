@@ -1,0 +1,34 @@
+@mixin center-items-content {
+  align-items: center;
+  justify-content: center;
+}
+ 
+@mixin flex-center {
+  display: flex;
+  @include center-items-content;
+}
+
+@mixin p-movil(){
+  @media screen and (orientation:portrait) and (max-width: 1050px) and (min-width: 321px) {
+    @content;
+  }
+}
+
+@mixin p-movil-lite(){
+  @media screen and (orientation:portrait) and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin l-movil(){
+  @media screen and (orientation:landscape) and (max-width: 1050px) {
+    @content;
+  }
+}
+@mixin movil-all(){
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+

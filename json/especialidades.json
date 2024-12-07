@@ -1,0 +1,71 @@
+{
+  "especialidades_medicas": {
+    "medicina_interna": {
+      "nombre": "Medicina Interna",
+      "subespecialidades": [
+        {
+          "nombre": "Cardiología",
+          "horas_disponibles": true
+        },
+        {
+          "nombre": "Gastroenterología",
+          "horas_disponibles": false
+        },
+        {
+          "nombre": "Endocrinología",
+          "horas_disponibles": false
+        },
+        {
+          "nombre": "Neumología",
+          "horas_disponibles": false
+        }
+      ]
+    },
+    "cirugia": {
+      "nombre": "Cirugía",
+      "subespecialidades": [
+        {
+          "nombre": "Cirugía General",
+          "horas_disponibles": true
+        },
+        {
+          "nombre": "Cirugía Cardíaca",
+          "horas_disponibles": false
+        },
+        {
+          "nombre": "Cirugía Plástica",
+          "horas_disponibles": true
+        },
+        {
+          "nombre": "Cirugía Pediátrica",
+          "horas_disponibles": false
+        },
+        {
+          "nombre": "Cirugía Vascular",
+          "horas_disponibles": false
+        }
+      ]
+    },
+    "pediatria": {
+      "nombre": "Pediatría",
+      "subespecialidades": [
+        {
+          "nombre": "Neonatología",
+          "horas_disponibles": false
+        },
+        {
+          "nombre": "Pediatría General",
+          "horas_disponibles": false
+        },
+        {
+          "nombre": "Cardiología Pediátrica",
+          "horas_disponibles": true
+        },
+        {
+          "nombre": "Neurología Pediátrica",
+          "horas_disponibles": true
+        }
+      ]
+    }
+  }
+}

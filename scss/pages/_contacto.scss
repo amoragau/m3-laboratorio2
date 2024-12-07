@@ -1,0 +1,19 @@
+@use "../utils/mixins" as m;
+.section__map{
+  @include m.center-items-content;
+  margin:0 auto;
+  width:50vw;
+  height:40vh;
+  @include m.p-movil(){
+    width:80vw;
+    height:80vw;
+  }
+  @include m.l-movil(){
+    width:80vw;
+    height:30vw;
+  }
+  & iframe{
+    height:100%;
+    width:100%;
+  } 
+} 

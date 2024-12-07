@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as v;
+@use "../utils/mixins" as m;
+
+.nav__link{
+  font-size: 1.2rem;
+  color: v.$first-color;
+  text-decoration: none;
+  padding: 15px;
+
+  @include m.l-movil(){
+    font-size: 1.3rem;
+  }
+  &:hover {
+    background: v.$first-color-transparent;
+    color: white;
+    @include m.movil-all(){
+      background: none;
+    }
+  }
+}
+.nav__logo{
+  & img {
+    width: 6rem;
+    height: auto;
+  }
+}

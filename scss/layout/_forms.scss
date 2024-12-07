@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as v;
+@use "../utils/mixins" as m;
+.contact__form {
+  margin:0 auto;
+  width:30vw;
+  @include m.movil-all(){
+    width:85vw;
+  }
+  @include m.l-movil(){
+    width:60vw;
+  }
+  &-input, &-textarea{
+    height:27px;
+    background: v.$fourth-color;
+    border:2px solid v.$third-color;
+    padding:10px;
+    margin-top:0.5rem;
+    font-size:1.2rem;
+    color: black;
+    width:100%;
+    @include m.p-movil(){
+      height:5vh;
+    }
+    @include m.p-movil-lite(){
+      height:27px;
+      padding:10px;
+    }
+
+    @include m.l-movil(){
+      height:27px;
+      padding:10px;
+    }
+  }
+  &-textarea {
+    height:15vh;
+  }
+ }

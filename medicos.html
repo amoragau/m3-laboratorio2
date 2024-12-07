@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Las Casitas - Equipo Médico</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg bg-green-hospital3 header__nav">
+        <div class="container-fluid">
+          <a class="navbar-brand nav_logo" href="index.html"><img src="./img/Las casitas.png" alt="Logo Hospital Las Casitas" width="200px"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" aria-current="page" href="medicos.html">Equipo Médico</a>
+              </li>
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <button class="btn btn-green-hospital1 nav__button" type="button" id="btnReservarCita">Reservar Cita</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section id="presentacion" class="section">
+      <h1>Conoce a nuestro Equipo Médico</h1>
+      <p>
+        El hospital se compromete firmemente con la excelencia médica, garantizando una 
+        atención de calidad que coloca al paciente en el centro de todos sus procesos. 
+        A través de la implementación de prácticas basadas en evidencia, 
+        un equipo altamente calificado y el uso de tecnología avanzada, 
+        el hospital busca continuamente mejorar los resultados de salud y 
+        la seguridad de sus pacientes. 
+      </p>
+    </section>
+    </br>
+    <section id="medicos" class="section">
+      <h2>Médicos destacados del mes</h2>
+      <div id="medicos__list" class="row section__list medicos__list">
+        <div class="col section__item card medicos__item">
+          <img src="./img/medico1.jpg" class="card-img-top medicos__img" alt="Imagen Medico Cirurano Andres Lopéz">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Juan Pérez - Cardiología</h5>
+            <p class="card-text">El Dr. López es un médico cardiologo con una destacada trayectoria.</p>
+          </div>
+        </div>
+        <div class="col section__item card medicos__item">
+          <img src="./img/medico3.jpg" class="card-img-top medicos__img" alt="Imagen Pediatra Carla Arriagada">
+          <div class="card-body">
+            <h5 class="card-title">Dra. María González - Neumologa</h5>
+            <p class="card-text">La Dra. Arriaga es una médico del àrea de la Neumología con una destacada trayectoria.</p>
+          </div>
+        </div>
+        <div class="col section__item card medicos__item">
+          <img src="./img/medico2.jpg" class="card-img-top medicos__img" alt="Imagen Medicina General Juan Ulloa">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Juan Ulloa - Medicina General</h5>
+            <p class="card-text">El Dr. Ulloa es un médico general con una destacada trayectoria en el ámbito de la cirugía general.</p>
+          </div>
+        </div>
+        <div class="col section__item card medicos__item">
+          <img src="./img/medico4.jpg" class="card-img-top medicos__img" alt="Imagen Traumatologo Álvaro Falcón">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Álvaro Falcón - Neurología Pediátrica</h5>
+            <p class="card-text">El Dr. falcón es un médico con una destacada trayectoria.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Contáctanos: <a href="mailto:123@456.cl">123@456.cl</a> o llamando al <a href="tel:56991234567">+ 56 9 9123 4567</a></p> 
+    <p>Av. Salvador 364, Providencia, Región Metropolitana</p> 
+    <ul class="footer__list">
+      <li class="footer__item"><a href="#">Quienes somos</a> ||</li>
+      <li class="footer__item"><a href="#">Sugerencias y Reclamos</a> ||</li>
+      <li class="footer__item"><a href="#">Facebook</a> ||</li>
+      <li class="footer__item"><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/medicos.js"></script>
+</body>
+</html>

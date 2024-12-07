@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Las Casitas</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg bg-green-hospital3 header__nav">
+        <div class="container-fluid">
+          <a class="navbar-brand nav_logo" href="index.html"><img src="./img/Las casitas.png" alt="Logo Hospital Las Casitas" width="200px"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" aria-current="page" href="medicos.html">Equipo Médico</a>
+              </li>
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <button class="btn btn-green-hospital1 nav__button" type="button" id="btnReservarCita">Reservar Cita</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+ <!--  TODO: Arreglar SASS-->
+  <main class="main">
+    <section class="container text-center section">
+      <div class="row section__list">
+        <div class="col section__item">
+          <img src="img/hospital.svg" alt="Imagen hospital" id="img-bienvenida">
+          <h1>Bienvenidos al Hospital Las Casitas</h1>
+          <p>
+            Tu Salud es los más importante para nosotros, ven y conocenos.
+          </p>
+        </div>
+      </div>
+
+      <div class="row section__list">
+        <div class="col section__item">
+          <div class="" id="bienvenida__mision">
+            <h2>Misión</h2>
+            <p class="text-start">
+              Somos un Establecimiento de Salud Provado que desarrolla procesos clínicos complejos con excelencia, 
+              para contribuir al logro de los objetivos sanitarios del país, con la participación activa de la comunidad organizada.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row section__list">
+        <div class="col section__item">
+          <div class="" id="bienvenida__vision">
+            <h2>Visión</h2>
+            <p class="text-start">
+              Ser un Establecimiento Público de Salud, complejo, Autogestionado, en Red, que contribuya a la formación del recurso humano, que garantice
+              a los usuarios calidad, oportunidad y equidad en la atención, con funcionarios plenamente competentes y comprometidos, siendo preferido en
+              el Sur por la Excelencia de sus Servicios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="servicios" class="container section">
+      <div class="row section__list">
+        <div class="col section__item">
+          <h2>Nuestros Servicios</h2>
+        </div>
+      </div>
+      <div class="row section__list">
+        <div class="col section__item section__item--border">
+          <div class="" id="servicios__list-consultas">
+            <img src="./img/consultas.webp" alt="Imagen Consultas" class="consultas__img"/>
+            <h3>Consultas</h3>
+            <p>
+              Tecnología de última generación para una resolución exitosa.
+            </p>
+          </div>
+        </div>
+        <div class="col section__item section__item--border">
+          <div class="" id="servicios__list-especialidades">
+            <img src="./img/especialidades.webp" alt="Imagen Especialidades Médicas" class="consultas__img"/>
+            <h3>Especialidades Médicas</h3>
+            <p>
+              Contamos con un experimentado staff de profesionales.
+            </p>
+            <button id="btnVerEspecialidades" class="btn btn-green-hospital3 btn-sm" type="button">Ver todas</button>
+            <button id="btnVerEspecialidadesDisp" class="btn btn-green-hospital3 btn-sm" type="button">Solo con horas disponibles</button>
+            <div class="col section__item" id="div_detalle_especialidades"></div>
+          </div>
+        </div>
+        <div class="col section__item section__item--border">
+          <div class="" id="servicios__list-urgencia">
+            <img src="./img/urgencias.webp" alt="Imagen Urgencias" class="consultas__img"/>
+            <h3>Urgencias</h3>
+            <p>
+              Manejo de pacientes de mediana y alta complejidad
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="container section">
+      <div class="row section__list">
+        <div class="col section__item">
+          <h2>Testimonio de nuestros pacientes</h2>
+        </div>
+      </div>
+      <div class="row section__list">
+        <div class="col section__item section__item--border">
+          <div class="" id="testimonios__list-first">
+            <h3>Juan Perez</h3>
+            <p>
+              La atención de urgencias es excelente, con médicos preocupados por los pacientes. La atención es rápida y personalizada.
+            </p>
+          </div>
+        </div>
+        <div class="col section__item section__item--border">
+          <div class="" id="testimonios__list-second">
+            <h3>Diego Diaz</h3>
+            <p>
+              Hace una semana me atención con el médico especialista de cardiologa Sr. Pablo Romero, el médico me explico con claridad todo lo referente a mi patología, los cuidados
+              que debo tener en el día a día.
+            </p>
+          </div>
+        </div>
+        <div class="col section__item section__item--border">
+          <div class="" id="testimonios__list-third">
+            <h3>Alejandro Soto</h3>
+            <p>
+              He realizado un tratamiento por problemas vasculares desde marzo de este año, todo perfecto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+  <footer class="footer">
+    <p>Contáctanos: <a href="mailto:123@456.cl">123@456.cl</a> o llamando al <a href="tel:56991234567">+ 56 9 9123 4567</a></p> 
+    <p>Av. Salvador 364, Providencia, Región Metropolitana</p> 
+    <ul class="footer__list">
+      <li class="footer__item"><a href="#">Quienes somos</a> ||</li>
+      <li class="footer__item"><a href="#">Sugerencias y Reclamos</a> ||</li>
+      <li class="footer__item"><a href="#">Facebook</a> ||</li>
+      <li class="footer__item"><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

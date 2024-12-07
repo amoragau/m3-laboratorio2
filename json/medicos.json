@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "nombre": "Dr. Juan Pérez",
+    "especialidad": "Cardiología",
+    "añosExperiencia": 15,
+    "disponibilidad": {
+      "lunes": ["09:00-13:00", "15:00-18:00"],
+      "miércoles": ["09:00-13:00", "15:00-18:00"],
+      "viernes": ["09:00-13:00"]
+    },
+    "destacado": true
+  },
+  {
+    "id": 2,
+    "nombre": "Dra. María González",
+    "especialidad": "Neumología",
+    "añosExperiencia": 10,
+    "disponibilidad": {
+      "martes": ["08:00-14:00"],
+      "jueves": ["08:00-14:00"],
+      "sábado": ["10:00-13:00"]
+    },
+    "destacado": true
+  },
+  {
+    "id": 3,
+    "nombre": "Dr. Carlos Rodríguez",
+    "especialidad": "Cirugía General",
+    "añosExperiencia": 20,
+    "disponibilidad": {
+      "lunes": ["14:00-20:00"],
+      "miércoles": ["14:00-20:00"],
+      "viernes": ["14:00-20:00"]
+    },
+    "destacado": false
+  },
+  {
+    "id": 4,
+    "nombre": "Dra. Ana Martínez",
+    "especialidad": "Cirugía General",
+    "añosExperiencia": 8,
+    "disponibilidad": {
+      "martes": ["09:00-15:00"],
+      "jueves": ["09:00-15:00"],
+      "viernes": ["15:00-19:00"]
+    },
+    "destacado": false
+  },
+  {
+    "id": 5,
+    "nombre": "Dr. Luis Sánchez",
+    "especialidad": "Cirugía Plástica",
+    "añosExperiencia": 12,
+    "disponibilidad": {
+      "lunes": ["08:00-14:00"],
+      "miércoles": ["08:00-14:00"],
+      "viernes": ["08:00-12:00"]
+    },
+    "destacado": false
+  },
+  {
+    "id": 6,
+    "nombre": "Dr. Juan Ulloa",
+    "especialidad": "Medicina General",
+    "añosExperiencia": 3,
+    "disponibilidad": null,
+    "destacado": true
+  },
+  {
+    "id": 7,
+    "nombre": "Dra. Elena Gómez",
+    "especialidad": "Cirugía Vascular",
+    "añosExperiencia": 11,
+    "disponibilidad": null,
+    "destacado": false
+  },
+  {
+    "id": 8,
+    "nombre": "Dr. Álvaro Falcón",
+    "especialidad": "Neurología Pediátrica",
+    "añosExperiencia": 7,
+    "disponibilidad": null,
+    "destacado": true
+  },
+  {
+    "id": 9,
+    "nombre": "Dr. Roberto Fernández",
+    "especialidad": "Endocrinología",
+    "añosExperiencia": 4,
+    "disponibilidad": null,
+    "destacado": false
+  }
+]

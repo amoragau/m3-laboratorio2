@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Las Casitas - Formularío de Contacto</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg bg-green-hospital3 header__nav">
+        <div class="container-fluid">
+          <a class="navbar-brand nav_logo" href="index.html"><img src="./img/Las casitas.png" alt="Logo Hospital Las Casitas" width="200px"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" aria-current="page" href="medicos.html">Equipo Médico</a>
+              </li>
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <button class="btn btn-green-hospital1 nav__button" type="button" id="btnReservarCita">Reservar Cita</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section>
+      <div id="alertRegistroPacientes"></div>
+    </section>
+    <section id="pacientes" class="section">
+      <h3>Registro de llegada pacientes:</h3>
+      <form action="" method="post" class="contact__form">	
+        <div class="mb-3">
+          <label for="rNombrePaciente" class="form-label">Nombre paciente<span class="requerido">*</span></label>
+          <input type="text" name="rNombrePaciente" id="rNombrePaciente" required placeholder="Escribe el nombre del paciente" class=" form-control form-control-lg contact__form-input">
+        </div>
+        <div class="d-grid gap-2">
+          <div id="alertCola"></div>
+          <button type="button" name="enviar_formulario" id="btnRegistrarLlegada" class="btn btn-green-hospital2">Registrar llegada</button>
+        </div>
+        <p class="aviso">
+          <span class="requerido"> * </span>Los campos son obligatorios.
+        </p>					
+      </form>
+    </section>
+    <hr>
+    <section id="contact" class="section">
+      <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+      <form action="" method="post" class="contact__form">	
+        <div class="mb-3">
+          <label for="rNombre" class="form-label">Nombre<span class="requerido">*</span></label>
+          <input type="text" name="rNombre" id="rNombre" required placeholder="Escribe tu nombre" class=" form-control form-control-lg contact__form-input">
+        </div>
+        <div class="mb-3">
+          <label for="rEmail" class="form-label">Email<span class="requerido">*</span></label><br>
+          <input type="email" name="rEmail" id="rEmail" required placeholder="Escribe tu Email" class="form-control form-control-lg contact__form-input">
+        </div>
+        <div class="mb-3">
+          <label for="rTelefono" class="form-label">Teléfono</label><br>
+          <input type="tel" name="rTelefono" id="rTelefono" placeholder="Escribe tu teléfono" class="form-control form-control-lg contact__form-input">
+        </div>      
+        <div class="mb-3">
+          <label for="rMensaje" class="form-label">Mensaje<span class="requerido">*</span></label><br>                  
+          <textarea name="rMensaje" class="form-control form-control-lg contact__form-textarea" id="rMensaje" required placeholder="Deja aquí tu comentario..."></textarea> 
+        </div>	
+        <div class="d-grid gap-2">
+          <div id="liveAlertPlaceholder"></div>
+          <button type="button" name="enviar_formulario" id="btnEnviar" class="btn btn-green-hospital1">Enviar</button>
+        </div>
+        <p class="aviso">
+          <span class="requerido"> * </span>Los campos son obligatorios.
+        </p>					
+      </form>
+    </section>
+    <section id="ubicacion" class="section">
+      <div class="section__list">
+        <div class="section__item">
+          <h4>Encuentranos en Av. Salvador 364, Providencia, Región Metropolitana</h4>
+          <div class="section__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4756009789467!2d-70.62688542280391!3d-33.43691357339493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c586d20d8f53%3A0xedac6c086d2b9445!2sHospital%20del%20Salvador!5e0!3m2!1ses-419!2scl!4v1730762874118!5m2!1ses-419!2scl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Contáctanos: <a href="mailto:123@456.cl">123@456.cl</a> o llamando al <a href="tel:56991234567">+ 56 9 9123 4567</a></p> 
+    <p>Av. Salvador 364, Providencia, Región Metropolitana</p> 
+    <ul class="footer__list">
+      <li class="footer__item"><a href="#">Quienes somos</a> ||</li>
+      <li class="footer__item"><a href="#">Sugerencias y Reclamos</a> ||</li>
+      <li class="footer__item"><a href="#">Facebook</a> ||</li>
+      <li class="footer__item"><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/contacto.js"></script>
+</body>
+</html>

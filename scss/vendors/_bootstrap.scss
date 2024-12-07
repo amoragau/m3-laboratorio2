@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as v;
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Default variable overrides
+$custom-colors:(
+  "green-hospital1": v.$first-color,
+  "green-hospital2": v.$second-color,
+  "green-hospital3": v.$third-color,
+  "green-hospital4": v.$fourth-color,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$btn-padding-y:1rem;
+$font-family-base: v.$font-stack;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+
